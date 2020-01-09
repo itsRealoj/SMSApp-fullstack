@@ -13,7 +13,7 @@ const credentials = {
 const AfricasTalking = require('africastalking')(credentials); 
 
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
+  res.render('index');
 });
 
 // ----------------------- SETTING THE SMS SERVICE-------------------
@@ -35,7 +35,7 @@ function sendMessage() {
       from: name
   }
 
-  res.send(options);
+  res.send("Message sent seccessfull to africa stalkings");
 
   sms.send(options)
       .then(console.log)
