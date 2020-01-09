@@ -11,6 +11,7 @@ const credentials = {
 // ----------------------- INITIALIZE THE SDK-------------------
 // -------------------------------------------------------------
 const AfricasTalking = require('africastalking')(credentials); 
+
 router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
 });

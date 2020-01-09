@@ -7,6 +7,7 @@ html(lang='en')
     title Document
     link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous')
   body
+    h2.mt-3.text-center  Send SMS
     .container.mt-4(style='width: 50%;')
       form(method='post' action='/')
         .form-group.row
@@ -20,7 +21,7 @@ html(lang='en')
         .form-group.row
           label.col-sm-2.col-form-label(htmlfor='comment') comment:
           .col-sm-10
-            input.form-control#comment(type='text' placeholder='Write message' name='comment')
+            textarea.form-control#comment(type='text' placeholder='Write message' name='comment')
         .form-group.row
           .col-sm-10
             button.btn.btn-primary(type='submit') Submit
